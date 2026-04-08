@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "INSERT IGNORE INTO Verlag_Adresse (PLZ, Ort, Strasse, Hausnummer)\n                VALUES (?, ?, ?, ?)",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 4
+    },
+    "nullable": []
+  },
+  "hash": "2fa809e96c82f08889933a7d69d53aff26a8b7b9229f1f6586eab49d4bbce6ff"
+}

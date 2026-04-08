@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "UPDATE Partie SET Partiedatum = ?, Spielkopie_ID = ? WHERE Partie_ID = ?",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 3
+    },
+    "nullable": []
+  },
+  "hash": "fd6b81b75d528eaf79d0765a0444e3151691038e8055b91e02e73e23a4dc2cfc"
+}

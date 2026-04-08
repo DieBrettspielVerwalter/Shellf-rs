@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "CALL SpielEinfuegenMitDetails(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 10
+    },
+    "nullable": []
+  },
+  "hash": "5aa6b70c14dd4e44337363258684c8be3db1a48ba2c75d37a3346283804346d4"
+}

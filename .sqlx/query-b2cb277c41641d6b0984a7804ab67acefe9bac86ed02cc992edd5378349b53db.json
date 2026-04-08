@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "UPDATE Spiel SET Spieltitel = ?, Erscheinungsjahr = ?, Kategorie = ?,\n                   Altersempfehlung = ?, Spieldauer_Durchschnitt = ?, Verlagsname = ?, BGG_Rating = ?\n             WHERE Spieltitel = ? AND Erscheinungsjahr = ?",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 9
+    },
+    "nullable": []
+  },
+  "hash": "b2cb277c41641d6b0984a7804ab67acefe9bac86ed02cc992edd5378349b53db"
+}

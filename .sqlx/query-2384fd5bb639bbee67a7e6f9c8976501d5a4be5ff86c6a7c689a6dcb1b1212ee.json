@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "UPDATE Spiel_Spieleranzahl SET Spieleranzahl_min = ?, Spieleranzahl_max = ?\n             WHERE Spieltitel = ? AND Erscheinungsjahr = ?",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 4
+    },
+    "nullable": []
+  },
+  "hash": "2384fd5bb639bbee67a7e6f9c8976501d5a4be5ff86c6a7c689a6dcb1b1212ee"
+}

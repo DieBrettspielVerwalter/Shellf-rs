@@ -1,0 +1,13 @@
+name = "Robustheit bei Fehlern"
+date = "2026-03-18 18:05"
+reviewer = "Oliver Decker"
+comment = "Das System reagiert stabil auf fehlerhafte Eingaben."
+
+[[requirements]]
+id = "NFR.009"
+comment = "Bei ungültigen Eingaben wird der aktuelle Dialog im Zweifel beendet und kann neu gestartet werden. Spätestens durch die Datenbankvalidierung werden fehlerhafte Zustände verhindert. Das CLI selbst bleibt dabei stabil und stürzt nicht ab."
+
+[[requirements]]
+id = "UC.8.NFR.009"
+comment = "Bei ungültigen Eingaben wird der aktuelle Dialog im Zweifel beendet und kann neu gestartet werden. Spätestens durch die Datenbankvalidierung werden fehlerhafte Zustände verhindert. Das CLI selbst bleibt dabei stabil und stürzt nicht ab."
+

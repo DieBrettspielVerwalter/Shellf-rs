@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "INSERT INTO Partie (Partiedatum, Spielkopie_ID, Spieleabend_ID) VALUES (?, ?, ?)",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 3
+    },
+    "nullable": []
+  },
+  "hash": "a2d237205aadfdf7b58f91704e94068be3b89fe1a55feb8a843ee5fa9ca2da0a"
+}

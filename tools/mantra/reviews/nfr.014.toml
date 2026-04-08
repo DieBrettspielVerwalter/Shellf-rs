@@ -1,0 +1,8 @@
+name = "Integration externer Datenquellen"
+date = "2026-03-25 17:30"
+reviewer = "Erik Spilner"
+comment = "Externe Datenquellen können flexibel angebunden werden."
+
+[[requirements]]
+id = "NFR.014"
+comment = "Externe APIs wie die BGG-API lassen sich ohne Änderungen an der Kernlogik integrieren. Für Caching-Zwecke kann jedoch eine Anpassung des Datenbanklayouts erforderlich sein."

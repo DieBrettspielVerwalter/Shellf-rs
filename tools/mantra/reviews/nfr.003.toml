@@ -1,0 +1,8 @@
+name = "Zugriffsschutz und Berechtigungsmanagement"
+date = "2026-03-21 10:15"
+reviewer = "Paul Deininger"
+comment = "Der Zugriff auf sensible Spiel-, Spieler- und Verleihinformationen ist durch ein klar definiertes und konsequent umgesetztes Berechtigungskonzept abgesichert."
+
+[[requirements]]
+id = "NFR.003"
+comment = "Der Zugriff auf Spiel-, Spieler- und Verleihinformationen wird durch den Einsatz von Datenbankbenutzern, Rollen sowie gezielt definierten Views und Stored Procedures effektiv kontrolliert. Dieses mehrschichtige Berechtigungsmodell stellt sicher, dass nur autorisierte Akteure auf relevante Daten zugreifen können. Gleichzeitig wird durch die Kapselung der Datenzugriffe über Views und Prozeduren die Einhaltung von Sicherheitsrichtlinien sowie die Integrität und Vertraulichkeit der Daten nachhaltig gewährleistet."

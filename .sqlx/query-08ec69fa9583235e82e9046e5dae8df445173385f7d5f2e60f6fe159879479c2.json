@@ -1,0 +1,25 @@
+{
+  "db_name": "MySQL",
+  "query": "SELECT Spieler_Email FROM Teilnahme WHERE Partie_ID = ?",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "Spieler_Email",
+        "type_info": {
+          "type": "VarString",
+          "flags": "NOT_NULL | PRIMARY_KEY | MULTIPLE_KEY | NO_DEFAULT_VALUE",
+          "char_set": 224,
+          "max_size": 400
+        }
+      }
+    ],
+    "parameters": {
+      "Right": 1
+    },
+    "nullable": [
+      false
+    ]
+  },
+  "hash": "08ec69fa9583235e82e9046e5dae8df445173385f7d5f2e60f6fe159879479c2"
+}

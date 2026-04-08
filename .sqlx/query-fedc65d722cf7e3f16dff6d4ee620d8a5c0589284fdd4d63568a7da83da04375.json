@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "UPDATE Person SET Email = ?, Personennachname = ?, Personenvorname = ?, Notizen = ? WHERE Email = ?",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 5
+    },
+    "nullable": []
+  },
+  "hash": "fedc65d722cf7e3f16dff6d4ee620d8a5c0589284fdd4d63568a7da83da04375"
+}

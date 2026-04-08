@@ -1,0 +1,17 @@
+name = "Reaktionsgeschwindigkeit"
+date = "2026-03-15 08:50"
+reviewer = "Erik Spilner"
+comment = "Das System reagiert schnell auf Eingaben."
+
+[[requirements]]
+id = "NFR.007"
+comment = "In der Nutzung treten keine merklichen Verzögerungen auf. Das CLI arbeitet direkt und wird nur durch Datenbank- oder API-Zugriffe beeinflusst. Bei stabiler Verbindung sind Ladezeiten minimal und für den Nutzer nicht wahrnehmbar."
+
+[[requirements]]
+id = "UC.6.NFR.007"
+comment = "In der Nutzung treten keine merklichen Verzögerungen auf. Das CLI arbeitet direkt und wird nur durch Datenbank- oder API-Zugriffe beeinflusst. Bei stabiler Verbindung sind Ladezeiten minimal und für den Nutzer nicht wahrnehmbar."
+
+[[requirements]]
+id = "UC.10.NFR.007"
+comment = "In der Nutzung treten keine merklichen Verzögerungen auf. Das CLI arbeitet direkt und wird nur durch Datenbank- oder API-Zugriffe beeinflusst. Bei stabiler Verbindung sind Ladezeiten minimal und für den Nutzer nicht wahrnehmbar."
+

@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "INSERT IGNORE INTO Spiel (Spieltitel, Erscheinungsjahr, Verlagsname) VALUES (?, ?, ?)",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 3
+    },
+    "nullable": []
+  },
+  "hash": "7e883015d97f42102ab90400247800d08e27ac2be401175ea8a09985e74771fa"
+}

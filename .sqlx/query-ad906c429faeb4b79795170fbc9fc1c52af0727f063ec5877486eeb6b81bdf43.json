@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "INSERT IGNORE INTO Person (Email, Personname, Personenvorname, Personennachname)\n                VALUES (?, ?, 'Host', 'User')",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 2
+    },
+    "nullable": []
+  },
+  "hash": "ad906c429faeb4b79795170fbc9fc1c52af0727f063ec5877486eeb6b81bdf43"
+}

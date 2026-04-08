@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "INSERT IGNORE INTO Spieler (Email) VALUES (?)",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 1
+    },
+    "nullable": []
+  },
+  "hash": "778fdc24d59c3a15b2f0651a63648d5611dfd82dfc1fa8ba4bca0b7d4ca8c96f"
+}

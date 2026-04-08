@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "UPDATE Spielkopie SET Kopie_ID = ?, Besitzer_Email = ? WHERE Kopie_ID = ?",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 3
+    },
+    "nullable": []
+  },
+  "hash": "23666efcd5410c126cdccc30f249f46e25ef1bca6d814990b8a97114a728bb1d"
+}

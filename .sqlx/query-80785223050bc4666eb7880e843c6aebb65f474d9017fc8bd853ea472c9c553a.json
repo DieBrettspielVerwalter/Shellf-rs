@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "DELETE FROM Designs WHERE Spieltitel = ? AND Erscheinungsjahr = ?",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 2
+    },
+    "nullable": []
+  },
+  "hash": "80785223050bc4666eb7880e843c6aebb65f474d9017fc8bd853ea472c9c553a"
+}

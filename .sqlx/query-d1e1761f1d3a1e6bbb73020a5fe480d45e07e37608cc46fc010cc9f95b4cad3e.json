@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "INSERT IGNORE INTO Autor (Autor_Email) VALUES (?)",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 1
+    },
+    "nullable": []
+  },
+  "hash": "d1e1761f1d3a1e6bbb73020a5fe480d45e07e37608cc46fc010cc9f95b4cad3e"
+}

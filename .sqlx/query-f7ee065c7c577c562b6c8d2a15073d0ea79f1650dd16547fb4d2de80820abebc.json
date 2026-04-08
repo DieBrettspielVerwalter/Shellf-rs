@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "INSERT INTO Designs (Spieltitel, Erscheinungsjahr, Autor_Email) VALUES (?, ?, ?)",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 3
+    },
+    "nullable": []
+  },
+  "hash": "f7ee065c7c577c562b6c8d2a15073d0ea79f1650dd16547fb4d2de80820abebc"
+}

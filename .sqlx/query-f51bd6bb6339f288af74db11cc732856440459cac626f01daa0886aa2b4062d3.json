@@ -1,0 +1,80 @@
+{
+  "db_name": "MySQL",
+  "query": "\n                SELECT\n                    sk.Kopie_ID, sk.Spieltitel, CAST(sk.Erscheinungsjahr AS SIGNED) as Jahr,\n                    sk.Besitzer_Email, a.Spieler_Email as Ausleiher_Email, a.Ausleihstartdatum\n                FROM Spielkopie sk\n                LEFT JOIN Ausleihe a ON sk.Kopie_ID = a.Kopie_ID AND a.Ausleihenddatum = '9999-12-31'\n                ",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "Kopie_ID",
+        "type_info": {
+          "type": "Long",
+          "flags": "NOT_NULL | PRIMARY_KEY | AUTO_INCREMENT",
+          "char_set": 63,
+          "max_size": 11
+        }
+      },
+      {
+        "ordinal": 1,
+        "name": "Spieltitel",
+        "type_info": {
+          "type": "VarString",
+          "flags": "NOT_NULL | MULTIPLE_KEY | NO_DEFAULT_VALUE",
+          "char_set": 224,
+          "max_size": 400
+        }
+      },
+      {
+        "ordinal": 2,
+        "name": "Jahr",
+        "type_info": {
+          "type": "Long",
+          "flags": "NOT_NULL | BINARY",
+          "char_set": 63,
+          "max_size": 4
+        }
+      },
+      {
+        "ordinal": 3,
+        "name": "Besitzer_Email",
+        "type_info": {
+          "type": "VarString",
+          "flags": "NOT_NULL | MULTIPLE_KEY | NO_DEFAULT_VALUE",
+          "char_set": 224,
+          "max_size": 400
+        }
+      },
+      {
+        "ordinal": 4,
+        "name": "Ausleiher_Email",
+        "type_info": {
+          "type": "VarString",
+          "flags": "PRIMARY_KEY | MULTIPLE_KEY",
+          "char_set": 224,
+          "max_size": 400
+        }
+      },
+      {
+        "ordinal": 5,
+        "name": "Ausleihstartdatum",
+        "type_info": {
+          "type": "Date",
+          "flags": "PRIMARY_KEY | BINARY | NO_DEFAULT_VALUE",
+          "char_set": 63,
+          "max_size": 10
+        }
+      }
+    ],
+    "parameters": {
+      "Right": 0
+    },
+    "nullable": [
+      false,
+      false,
+      false,
+      false,
+      true,
+      true
+    ]
+  },
+  "hash": "f51bd6bb6339f288af74db11cc732856440459cac626f01daa0886aa2b4062d3"
+}

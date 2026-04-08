@@ -1,0 +1,13 @@
+name = "Verfügbarkeit des Systems"
+date = "2026-03-17 13:10"
+reviewer = "Paul Deininger"
+comment = "Das System ist jederzeit einsatzbereit."
+
+[[requirements]]
+id = "NFR.008"
+comment = "Alle Funktionen können jederzeit vom Benutzer ausgeführt werden, ohne künstliche Einschränkungen oder Zeitfenster."
+
+[[requirements]]
+id = "UC.7.NFR.008"
+comment = "Alle Funktionen können jederzeit vom Benutzer ausgeführt werden, ohne künstliche Einschränkungen oder Zeitfenster."
+

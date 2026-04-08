@@ -1,0 +1,91 @@
+{
+  "db_name": "MySQL",
+  "query": "\n                SELECT\n                    a.Kopie_ID as \"id: i32\",\n                    sk.Spieltitel as \"game_name\",\n                    CAST(sk.Erscheinungsjahr AS SIGNED) as \"game_year: i32\",\n                    sk.Besitzer_Email as \"owner_id\",\n                    a.Spieler_Email as \"borrower: String\",\n                    a.Ausleihstartdatum as \"borrow_date\",\n                    a.Ausleihenddatum as \"due_date?\"\n                FROM Ausleihe a\n                JOIN Spielkopie sk ON a.Kopie_ID = sk.Kopie_ID\n                WHERE a.Ausleihenddatum IS NULL\n                   OR a.Ausleihenddatum >= CURDATE()\n                   OR a.Ausleihenddatum = '9999-12-31'\n                ",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "id: i32",
+        "type_info": {
+          "type": "Long",
+          "flags": "NOT_NULL | PRIMARY_KEY | NO_DEFAULT_VALUE",
+          "char_set": 63,
+          "max_size": 11
+        }
+      },
+      {
+        "ordinal": 1,
+        "name": "game_name",
+        "type_info": {
+          "type": "VarString",
+          "flags": "NOT_NULL | MULTIPLE_KEY | NO_DEFAULT_VALUE",
+          "char_set": 224,
+          "max_size": 400
+        }
+      },
+      {
+        "ordinal": 2,
+        "name": "game_year: i32",
+        "type_info": {
+          "type": "Long",
+          "flags": "NOT_NULL | BINARY",
+          "char_set": 63,
+          "max_size": 4
+        }
+      },
+      {
+        "ordinal": 3,
+        "name": "owner_id",
+        "type_info": {
+          "type": "VarString",
+          "flags": "NOT_NULL | MULTIPLE_KEY | NO_DEFAULT_VALUE",
+          "char_set": 224,
+          "max_size": 400
+        }
+      },
+      {
+        "ordinal": 4,
+        "name": "borrower: String",
+        "type_info": {
+          "type": "VarString",
+          "flags": "NOT_NULL | PRIMARY_KEY | MULTIPLE_KEY",
+          "char_set": 224,
+          "max_size": 400
+        }
+      },
+      {
+        "ordinal": 5,
+        "name": "borrow_date",
+        "type_info": {
+          "type": "Date",
+          "flags": "NOT_NULL | PRIMARY_KEY | BINARY | NO_DEFAULT_VALUE",
+          "char_set": 63,
+          "max_size": 10
+        }
+      },
+      {
+        "ordinal": 6,
+        "name": "due_date?",
+        "type_info": {
+          "type": "Date",
+          "flags": "BINARY",
+          "char_set": 63,
+          "max_size": 10
+        }
+      }
+    ],
+    "parameters": {
+      "Right": 0
+    },
+    "nullable": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  "hash": "1eef50f70b5b2b347d8655e8f614156c030b0554234f457fec31640be29d24ca"
+}

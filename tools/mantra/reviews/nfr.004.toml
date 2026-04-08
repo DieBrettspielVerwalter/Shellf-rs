@@ -1,0 +1,13 @@
+name = "Testbarkeit des Systems"
+date = "2026-03-12 09:05"
+reviewer = "Noah Fell"
+comment = "Das System ist umfassend testbar und unterstützt automatisierte Tests."
+
+[[requirements]]
+id = "NFR.004"
+comment = "Die Clean-Architecture ermöglicht isolierte Tests durch automatisch generierte Mocks für Repositories. Diese werden zur Validierung der Use-Cases genutzt. Für die Repositories existieren Contract-Traits, die das Verhalten des Backends sicherstellen. Zusätzlich wird das CLI über stdio-Mockups getestet."
+
+[[requirements]]
+id = "UC.3.NFR.004"
+comment = "Die Clean-Architecture ermöglicht isolierte Tests durch automatisch generierte Mocks für Repositories. Diese werden zur Validierung der Use-Cases genutzt. Für die Repositories existieren Contract-Traits, die das Verhalten des Backends sicherstellen. Zusätzlich wird das CLI über stdio-Mockups getestet."
+

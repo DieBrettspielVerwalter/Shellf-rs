@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "CALL Partie_Erstellen(?, ?)",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 2
+    },
+    "nullable": []
+  },
+  "hash": "a9b3f73fea7c207b182a41899a95a5ba80e8f59340126a50f8e11d720f3f5708"
+}

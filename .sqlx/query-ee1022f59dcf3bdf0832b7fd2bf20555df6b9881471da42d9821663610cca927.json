@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "UPDATE Spieler SET Nickname = ? WHERE Email = ?",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 2
+    },
+    "nullable": []
+  },
+  "hash": "ee1022f59dcf3bdf0832b7fd2bf20555df6b9881471da42d9821663610cca927"
+}

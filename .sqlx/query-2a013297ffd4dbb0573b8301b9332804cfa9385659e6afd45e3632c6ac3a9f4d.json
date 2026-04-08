@@ -1,0 +1,58 @@
+{
+  "db_name": "MySQL",
+  "query": "\n            SELECT\n                p.Partie_ID as \"id: i32\",\n                p.Partiedatum as \"date\",\n                p.Spielkopie_ID as \"copy_id: i32\",\n                GROUP_CONCAT(t.Spieler_Email) as \"participants: String\"\n            FROM Partie p\n            LEFT JOIN Teilnahme t ON p.Partie_ID = t.Partie_ID\n            GROUP BY p.Partie_ID\n            ",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "id: i32",
+        "type_info": {
+          "type": "Long",
+          "flags": "NOT_NULL | PRIMARY_KEY | AUTO_INCREMENT",
+          "char_set": 63,
+          "max_size": 11
+        }
+      },
+      {
+        "ordinal": 1,
+        "name": "date",
+        "type_info": {
+          "type": "Date",
+          "flags": "NOT_NULL | BINARY | NO_DEFAULT_VALUE",
+          "char_set": 63,
+          "max_size": 10
+        }
+      },
+      {
+        "ordinal": 2,
+        "name": "copy_id: i32",
+        "type_info": {
+          "type": "Long",
+          "flags": "NOT_NULL | MULTIPLE_KEY | NO_DEFAULT_VALUE",
+          "char_set": 63,
+          "max_size": 11
+        }
+      },
+      {
+        "ordinal": 3,
+        "name": "participants: String",
+        "type_info": {
+          "type": "Blob",
+          "flags": "",
+          "char_set": 224,
+          "max_size": 12582912
+        }
+      }
+    ],
+    "parameters": {
+      "Right": 0
+    },
+    "nullable": [
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  "hash": "2a013297ffd4dbb0573b8301b9332804cfa9385659e6afd45e3632c6ac3a9f4d"
+}

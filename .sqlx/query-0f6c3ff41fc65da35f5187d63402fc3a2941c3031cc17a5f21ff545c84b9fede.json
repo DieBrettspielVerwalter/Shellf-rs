@@ -1,0 +1,36 @@
+{
+  "db_name": "MySQL",
+  "query": "SELECT USER_EMAIL() as mail, CURRENT_ROLE() as role",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "mail",
+        "type_info": {
+          "type": "VarString",
+          "flags": "",
+          "char_set": 224,
+          "max_size": 1020
+        }
+      },
+      {
+        "ordinal": 1,
+        "name": "role",
+        "type_info": {
+          "type": "VarString",
+          "flags": "",
+          "char_set": 224,
+          "max_size": 512
+        }
+      }
+    ],
+    "parameters": {
+      "Right": 0
+    },
+    "nullable": [
+      true,
+      true
+    ]
+  },
+  "hash": "0f6c3ff41fc65da35f5187d63402fc3a2941c3031cc17a5f21ff545c84b9fede"
+}

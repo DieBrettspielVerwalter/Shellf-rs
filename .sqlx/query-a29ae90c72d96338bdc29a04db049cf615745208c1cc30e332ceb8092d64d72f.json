@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "INSERT INTO Verlag_Adresse (PLZ, Ort, Strasse, Hausnummer) VALUES (?, ?, ?, ?)",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 4
+    },
+    "nullable": []
+  },
+  "hash": "a29ae90c72d96338bdc29a04db049cf615745208c1cc30e332ceb8092d64d72f"
+}

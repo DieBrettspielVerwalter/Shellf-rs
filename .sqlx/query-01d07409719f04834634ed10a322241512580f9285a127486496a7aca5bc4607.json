@@ -1,0 +1,58 @@
+{
+  "db_name": "MySQL",
+  "query": "\n            SELECT\n                sa.Spieleabend_ID AS \"Spieleabend_ID: i32\",\n                sa.Spieleabenddatum,\n                sa.Spieleabendnotizen,\n                (SELECT GROUP_CONCAT(DISTINCT t.Spieler_Email)\n                 FROM Partie p\n                 JOIN Teilnahme t ON p.Partie_ID = t.Partie_ID\n                 WHERE p.Spieleabend_ID = sa.Spieleabend_ID) as teilnehmer_liste\n            FROM Spieleabend sa\n            ",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "Spieleabend_ID: i32",
+        "type_info": {
+          "type": "Long",
+          "flags": "NOT_NULL | PRIMARY_KEY | AUTO_INCREMENT",
+          "char_set": 63,
+          "max_size": 11
+        }
+      },
+      {
+        "ordinal": 1,
+        "name": "Spieleabenddatum",
+        "type_info": {
+          "type": "Date",
+          "flags": "NOT_NULL | BINARY | NO_DEFAULT_VALUE",
+          "char_set": 63,
+          "max_size": 10
+        }
+      },
+      {
+        "ordinal": 2,
+        "name": "Spieleabendnotizen",
+        "type_info": {
+          "type": "Blob",
+          "flags": "BLOB",
+          "char_set": 224,
+          "max_size": 262140
+        }
+      },
+      {
+        "ordinal": 3,
+        "name": "teilnehmer_liste",
+        "type_info": {
+          "type": "Blob",
+          "flags": "",
+          "char_set": 224,
+          "max_size": 12582912
+        }
+      }
+    ],
+    "parameters": {
+      "Right": 0
+    },
+    "nullable": [
+      false,
+      false,
+      true,
+      true
+    ]
+  },
+  "hash": "01d07409719f04834634ed10a322241512580f9285a127486496a7aca5bc4607"
+}

@@ -1,0 +1,113 @@
+{
+  "db_name": "MySQL",
+  "query": "\n            SELECT\n                s.Spieltitel,\n                s.Erscheinungsjahr AS \"Erscheinungsjahr: i32\",\n                s.Kategorie,\n                s.Altersempfehlung AS \"Altersempfehlung: i32\",\n                s.Verlagsname,\n                s.Spieldauer_Durchschnitt AS \"Spieldauer_Durchschnitt: i32\",\n                s.BGG_Rating AS \"BGG_Rating: f32\",\n                GROUP_CONCAT(p.Personname) as autoren_liste,\n                (SELECT CONCAT(min.Spieleranzahl_min, '-', min.Spieleranzahl_max)\n                 FROM Spiel_Spieleranzahl min\n                 WHERE min.Spieltitel = s.Spieltitel AND min.Erscheinungsjahr = s.Erscheinungsjahr\n                 LIMIT 1) as spieler_range\n            FROM Spiel s\n            LEFT JOIN Designs d ON s.Spieltitel = d.Spieltitel AND s.Erscheinungsjahr = d.Erscheinungsjahr\n            LEFT JOIN Person p ON d.Autor_Email = p.Email\n            GROUP BY s.Spieltitel, s.Erscheinungsjahr\n            ",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "Spieltitel",
+        "type_info": {
+          "type": "VarString",
+          "flags": "NOT_NULL | PRIMARY_KEY | NO_DEFAULT_VALUE",
+          "char_set": 224,
+          "max_size": 400
+        }
+      },
+      {
+        "ordinal": 1,
+        "name": "Erscheinungsjahr: i32",
+        "type_info": {
+          "type": "Year",
+          "flags": "NOT_NULL | PRIMARY_KEY | UNSIGNED | ZEROFILL | NO_DEFAULT_VALUE",
+          "char_set": 63,
+          "max_size": 4
+        }
+      },
+      {
+        "ordinal": 2,
+        "name": "Kategorie",
+        "type_info": {
+          "type": "VarString",
+          "flags": "",
+          "char_set": 224,
+          "max_size": 200
+        }
+      },
+      {
+        "ordinal": 3,
+        "name": "Altersempfehlung: i32",
+        "type_info": {
+          "type": "Long",
+          "flags": "",
+          "char_set": 63,
+          "max_size": 11
+        }
+      },
+      {
+        "ordinal": 4,
+        "name": "Verlagsname",
+        "type_info": {
+          "type": "VarString",
+          "flags": "MULTIPLE_KEY",
+          "char_set": 224,
+          "max_size": 400
+        }
+      },
+      {
+        "ordinal": 5,
+        "name": "Spieldauer_Durchschnitt: i32",
+        "type_info": {
+          "type": "Long",
+          "flags": "",
+          "char_set": 63,
+          "max_size": 11
+        }
+      },
+      {
+        "ordinal": 6,
+        "name": "BGG_Rating: f32",
+        "type_info": {
+          "type": "Float",
+          "flags": "",
+          "char_set": 63,
+          "max_size": 12
+        }
+      },
+      {
+        "ordinal": 7,
+        "name": "autoren_liste",
+        "type_info": {
+          "type": "Blob",
+          "flags": "",
+          "char_set": 224,
+          "max_size": 12582912
+        }
+      },
+      {
+        "ordinal": 8,
+        "name": "spieler_range",
+        "type_info": {
+          "type": "VarString",
+          "flags": "",
+          "char_set": 224,
+          "max_size": 92
+        }
+      }
+    ],
+    "parameters": {
+      "Right": 0
+    },
+    "nullable": [
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "hash": "db1750681c21d417f8c5fcfb671454ce3216d8962d1dceda7202ae6c190fb39a"
+}

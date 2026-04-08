@@ -1,0 +1,80 @@
+{
+  "db_name": "MySQL",
+  "query": "\n                SELECT\n                    Kopie_ID, Spieltitel, CAST(Erscheinungsjahr AS SIGNED) as Jahr,\n                    Besitzer_Email, Ausleiher_Email, Ausleihstartdatum\n                FROM Spieler_Kopien_und_Ausleihen\n                ",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "Kopie_ID",
+        "type_info": {
+          "type": "Long",
+          "flags": "NOT_NULL",
+          "char_set": 63,
+          "max_size": 11
+        }
+      },
+      {
+        "ordinal": 1,
+        "name": "Spieltitel",
+        "type_info": {
+          "type": "VarString",
+          "flags": "NOT_NULL",
+          "char_set": 224,
+          "max_size": 400
+        }
+      },
+      {
+        "ordinal": 2,
+        "name": "Jahr",
+        "type_info": {
+          "type": "Long",
+          "flags": "NOT_NULL | BINARY",
+          "char_set": 63,
+          "max_size": 4
+        }
+      },
+      {
+        "ordinal": 3,
+        "name": "Besitzer_Email",
+        "type_info": {
+          "type": "VarString",
+          "flags": "NOT_NULL",
+          "char_set": 224,
+          "max_size": 400
+        }
+      },
+      {
+        "ordinal": 4,
+        "name": "Ausleiher_Email",
+        "type_info": {
+          "type": "VarString",
+          "flags": "",
+          "char_set": 224,
+          "max_size": 400
+        }
+      },
+      {
+        "ordinal": 5,
+        "name": "Ausleihstartdatum",
+        "type_info": {
+          "type": "Date",
+          "flags": "BINARY",
+          "char_set": 63,
+          "max_size": 10
+        }
+      }
+    ],
+    "parameters": {
+      "Right": 0
+    },
+    "nullable": [
+      false,
+      false,
+      false,
+      false,
+      true,
+      true
+    ]
+  },
+  "hash": "9d709e6b15ef9e384bd26aaed5864edd0b6bcc7b90e2c41a5c38d3983ffd8fe7"
+}

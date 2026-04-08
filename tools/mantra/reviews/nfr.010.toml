@@ -1,0 +1,9 @@
+name = "Plattformunabhängigkeit"
+date = "2026-03-19 10:25"
+reviewer = "Noah Fell"
+comment = "Das System ist flexibel einsetzbar."
+
+[[requirements]]
+id = "NFR.010"
+comment = "Die Anwendung kann problemlos in einen Docker-Container integriert werden und ist damit auf verschiedenen Plattformen lauffähig, insbesondere unter Linux."
+

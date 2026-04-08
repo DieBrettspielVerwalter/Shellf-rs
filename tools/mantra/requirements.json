@@ -1,0 +1,900 @@
+{
+  "requirements": [
+    {
+      "id": "UC",
+      "title": "Alle Use-Cases",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ",
+      "title": "Alle Requirements",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "NFR",
+      "title": "Alle Non-functional-Requirements",
+      "origin": "local",
+      "manual": true,
+      "deprecated": false
+    },
+    {
+      "id": "UC.1",
+      "title": "Spiel und zugehörige Stammdaten erfassen",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.2",
+      "title": "Spielkopien verwalten",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.3",
+      "title": "Spieler anlegen und verwalten",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.4",
+      "title": "Spiel ausleihen",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.6",
+      "title": "Spieleabend planen",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.7",
+      "title": "Partie anlegen und verwalten",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.8",
+      "title": "Spielkopie in Partie verwenden",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.9",
+      "title": "Bestandsübersichten anzeigen",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.10",
+      "title": "Statistiken und Auswertungen generieren",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.1.REQ.001",
+      "title": "Das System muss dem Nutzer eine Eingabemaske oder CLI-Befehl zur Verfügung stellen, um Spieldaten (Titel, Jahr, Spieleranzahl, Dauer, Alter, Kategorie) einzugeben.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.1.REQ.002",
+      "title": "Das System muss dem Nutzer erlauben, Verlag und Autor(en) entweder neu einzugeben oder aus bestehenden Einträgen auszuwählen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.1.REQ.003",
+      "title": "Das System muss den Nutzer auffordern, fehlende Pflichtangaben oder ungültige Eingaben nachzubessern, bevor die Eingabe abgeschlossen werden kann.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.1.REQ.004",
+      "title": "Das System muss nach Eingabe der Daten automatisch das Spiel mit Verlag und Autor(en) in der Datenbank verknüpfen und speichern.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.1.REQ.005",
+      "title": "Das System soll optional API-Bewertungen abrufen und in die Spieldaten integrieren.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.1.REQ.006",
+      "title": "Das System muss bei einem Fehler in der API-Anfrage den Nutzer informieren und die bereits eingegebenen Spieldaten lokal speichern, damit keine Daten verloren gehen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.1.REQ.007",
+      "title": "Das System muss in der Lage sein, API-Anfragen an die BoardGameGeek (BGG)-API (Application Programming Interface) durchzuführen und die Bewertungen korrekt zu empfangen und zu verarbeiten.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.1.REQ.008",
+      "title": "Das System soll bei Fehlern oder Zeitüberschreitungen der API-Anfrage eine geeignete Fehlermeldung erzeugen und den Nutzer informieren.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.2.REQ.009",
+      "title": "Das System muss dem Nutzer eine Eingabemaske oder CLI-Befehl zur Verfügung stellen, um neue Spielkopien zu erfassen und diese mit einem Spiel zu verknüpfen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.010",
+      "title": "Das System muss dem Nutzer erlauben, eine Spielkopie an einen Spieler mit Startdatum und optionalem Enddatum zu verleihen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.011",
+      "title": "Das System soll dem Nutzer die Möglichkeit bieten, den Verleihzeitraum einer Spielkopie zu verlängern.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.012",
+      "title": "Das System soll eine Funktion bereitstellen, um die Rückgabe einer Spielkopie zu erfassen und den Verleihstatus entsprechend zu ändern.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.001",
+      "title": "Das System muss dem Nutzer eine Eingabemaske oder CLI-Befehl zur Verfügung stellen, um Spieldaten (Titel, Jahr, Spieleranzahl, Dauer, Alter, Kategorie) einzugeben.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.002",
+      "title": "Das System muss dem Nutzer erlauben, Verlag und Autor(en) entweder neu einzugeben oder aus bestehenden Einträgen auszuwählen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.003",
+      "title": "Das System muss den Nutzer auffordern, fehlende Pflichtangaben oder ungültige Eingaben nachzubessern, bevor die Eingabe abgeschlossen werden kann.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.004",
+      "title": "Das System muss nach Eingabe der Daten automatisch das Spiel mit Verlag und Autor(en) in der Datenbank verknüpfen und speichern.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.005",
+      "title": "Das System soll optional API-Bewertungen abrufen und in die Spield- aten integrieren.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.006",
+      "title": "Das System muss bei einem Fehler in der API-Anfrage den Nutzer informieren und die bereits eingegebenen Spieldaten lokal speichern, damit keine Daten verloren gehen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.007",
+      "title": "Das System muss in der Lage sein, API-Anfragen an die BoardGameGeek (BGG)-API (Application Programming Interface) durchzuführen und die Bewertungen korrekt zu empfangen und zu verarbeiten.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.008",
+      "title": "Das System soll bei Fehlern oder Zeitüberschreitungen der API-Anfrage eine geeignete Fehlermeldung erzeugen und den Nutzer informieren.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.009",
+      "title": "Das System muss dem Nutzer eine Eingabemaske oder CLI-Befehl zur Verfügung stellen, um neue Spielkopien zu erfassen und diese mit einem Spiel zu verknüpfen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.014",
+      "title": "Das System muss dem Nutzer eine Eingabemaske oder CLI-Befehl bereitstellen, um einen neuen Spieler mit Nickname und optionalen Details anzulegen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.015",
+      "title": "Das System muss ungültige Eingaben erkennen und den Nutzer zur Korrektur auffordern.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.016",
+      "title": "Das System muss den Spieler-Datensatz anlegen und in der Datenbank speichern.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.018",
+      "title": "Das System muss dem Nutzer über die CLI eine Funktion zur Verfügung stellen, um einen bestehenden Spieler zu löschen. Nach der Bestätigung der Löschaktion muss das System alle zugehörigen Spielerinformationen aus der Datenbank entfernen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.019",
+      "title": "Das System muss dem Verleiher eine Eingabemaske oder Benutzeroberfläche (CLI) bereitstellen, um eine Spielkopie und den Empfänger (Spieler) auszuwählen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.020",
+      "title": "Das System muss dem Nutzer die Möglichkeit bieten, eine vorhandene Spielkopie an einen Spieler zu verleihen. Dabei müssen Start- und optional ein Enddatum eingegeben werden können.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.024",
+      "title": "Das System muss dem Nutzer ermöglichen, eine verliehene Spielkopie als zurückgegeben zu markieren, woraufhin der Verleihstatus im System automatisch aktualisiert wird.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.025",
+      "title": "Das System muss dem Nutzer eine Eingabemaske bereitstellen, um Autorendaten einzugeben oder einen vorhandenen Autor auszuwählen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.026",
+      "title": "Das System muss dem Nutzer ermöglichen, einen Autor einem bestehenden Spiel zuzuordnen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.027",
+      "title": "Das System muss den Autor speichern und die Verknüpfung mit dem Spiel anlegen, sobald die Eingaben abgeschlossen sind.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.028",
+      "title": "Das System soll bei bestehendem Autor die Verknüpfung zum Spiel ergänzen, ohne einen neuen Autor-Datensatz anzulegen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.021",
+      "title": "Das System muss bei Konflikten (z.B. Spielkopie bereits verliehen) den Verleihvorgang abbrechen und den Nutzer informieren.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.022",
+      "title": "Das System muss nach Abschluss der Eingaben den Verleihstatus der Spielkopie aktualisieren und den Besitzer entsprechend verknüpfen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.030",
+      "title": "Das System muss dem Nutzer eine Eingabemaske bereitstellen, um Datum und Ort für den Spieleabend einzugeben.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.031",
+      "title": "Das System soll dem Nutzer ermöglichen, optionale Notizen und eine Adresse zum Spieleabend hinzuzufügen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.032",
+      "title": "Das System muss den Nutzer bei fehlenden Pflichtangaben (z.B. Datum, Ort) auf diese hinweisen und den Abbruch der Planung erlauben.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.033",
+      "title": "Das System muss den Spieleabend nach Eingabe der erforderlichen Daten anlegen und speichern.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.040",
+      "title": "Das System muss dem Nutzer eine Eingabemaske bereitstellen, um Datum und Details der Partie einzugeben.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.041",
+      "title": "Das System soll dem Nutzer ermöglichen, eine Verknüpfung der Partie mit einem bestehenden Spieleabend herzustellen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.042",
+      "title": "Das System muss dem Nutzer ermöglichen, eine Partie auch ohne Verknüpfung zu einem Spieleabend zu speichern (lose Veranstaltung).",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.043",
+      "title": "Das System muss die Partie nach Eingabe der erforderlichen Daten und ggf. Verknüpfung mit dem Spieleabend anlegen und speichern.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.050",
+      "title": "Das System muss dem Nutzer eine Möglichkeit bereitstellen, eine Spielkopie für eine Partie auszuwählen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.051",
+      "title": "Das System muss den Nutzer informieren, wenn die ausgewählte Spielkopie nicht verfügbar ist (z.B. verliehen).",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.052",
+      "title": "Das System soll dem Nutzer alternative verfügbare Spielkopien vorschlagen, falls die gewählte Kopie belegt ist.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.053",
+      "title": "Das System muss nach Auswahl der Spielkopie automatisch prüfen, ob diese für die gewählte Partie verfügbar ist.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.054",
+      "title": "Das System muss die Spielkopie bei Verfügbarkeit für die Partie reservieren und entsprechend kennzeichnen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.060",
+      "title": "Das System muss eine tabellarische Spieleübersicht ausgeben, die Titel, Jahr, Spieleranzahl, Dauer, Mindestalter und Kategorie enthält.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.061",
+      "title": "Das System muss eine Übersicht aller angelegten Spieler mit ihrem Nicknamen und Status ausgeben.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.062",
+      "title": "Das System muss den aktuellen Verleihstatus anzeigen (Welche Kopie bei welchem Spieler inkl. Start- und Rückgabedatum).",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.070",
+      "title": "Das System muss die Anzahl der erfassten Spiele, Spieler, Kopien und Partien als Bestandsstatistik ausgeben.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.071",
+      "title": "Das System muss die Top-Listen für die am häufigsten verliehenen Spiele und die aktivsten Spieler ermitteln.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "NFR.001",
+      "title": "System muss leicht anpassbar sein, z.B. bei Änderungen der Spielattribute, neuen Feldern oder Workflows.",
+      "origin": "local",
+      "manual": true,
+      "deprecated": false
+    },
+    {
+      "id": "NFR.002",
+      "title": "System muss korrekte Daten speichern und keine Konflikte erzeugen.",
+      "origin": "local",
+      "manual": true,
+      "deprecated": false
+    },
+    {
+      "id": "NFR.004",
+      "title": "System muss testbar sein, inklusive automatisierter Tests für Datenvalidierung und Verleihprozesse.",
+      "origin": "local",
+      "manual": true,
+      "deprecated": false
+    },
+    {
+      "id": "NFR.005",
+      "title": "System muss stabil laufen, auch bei parallelen Verleihvorgängen.",
+      "origin": "local",
+      "manual": true,
+      "deprecated": false
+    },
+    {
+      "id": "NFR.006",
+      "title": "Systemoberfläche muss intuitiv und verständlich sein, damit Nutzer Eingaben schnell tätigen können.",
+      "origin": "local",
+      "manual": true,
+      "deprecated": false
+    },
+    {
+      "id": "NFR.007",
+      "title": "System reagiert zügig auf Nutzeraktionen, z.B. beim Laden von Spiel- oder Spielerlisten.",
+      "origin": "local",
+      "manual": true,
+      "deprecated": false
+    },
+    {
+      "id": "NFR.008",
+      "title": "System muss jederzeit erreichbar sein, insbesondere für Verleih- und Partieprozesse.",
+      "origin": "local",
+      "manual": true,
+      "deprecated": false
+    },
+    {
+      "id": "NFR.009",
+      "title": "System muss auch bei ungültigen Eingaben stabil reagieren.",
+      "origin": "local",
+      "manual": true,
+      "deprecated": false
+    },
+    {
+      "id": "NFR.013",
+      "title": "System muss steigende Datenmengen (Spiele, Spieler, Spielkopien) verarbeiten können.",
+      "origin": "local",
+      "manual": true,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.013",
+      "title": "Das System muss nach Verleih oder Rückgabe einer Spielkopie den Verleihstatus der Spielkopie automatisch aktualisieren und speichern.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.3.REQ.014",
+      "title": "Das System muss dem Nutzer eine Eingabemaske oder CLI-Befehl bereitstellen, um einen neuen Spieler mit Nickname und optionalen Details anzulegen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.3.REQ.015",
+      "title": "Das System muss ungültige Eingaben erkennen und den Nutzer zur Korrektur auffordern.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.3.REQ.016",
+      "title": "Das System muss den Spieler-Datensatz anlegen und in der Datenbank speichern.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.3.REQ.018",
+      "title": "Das System muss dem Nutzer über die CLI eine Funktion zur Verfügung stellen, um einen bestehenden Spieler zu löschen. Nach der Bestätigung der Löschaktion muss das System alle zugehörigen Spielerinformationen aus der Datenbank entfernen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.4.REQ.019",
+      "title": "Das System muss dem Verleiher eine Eingabemaske oder Benutzeroberfläche (CLI) bereitstellen, um eine Spielkopie und den Empfänger (Spieler) auszuwählen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.2.REQ.020",
+      "title": "Das System muss dem Nutzer die Möglichkeit bieten, eine vorhandene Spielkopie an einen Spieler zu verleihen. Dabei müssen Start- und optional ein Enddatum eingegeben werden können.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.4.REQ.020",
+      "title": "Das System muss dem Nutzer die Möglichkeit bieten, eine vorhandene Spielkopie an einen Spieler zu verleihen. Dabei müssen Start- und optional ein Enddatum eingegeben werden können.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.4.REQ.021",
+      "title": "Das System muss bei Konflikten (z.B. Spielkopie bereits verliehen) den Verleihvorgang abbrechen und den Nutzer informieren.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.4.REQ.022",
+      "title": "Das System muss nach Abschluss der Eingaben den Verleihstatus der Spielkopie aktualisieren und den Besitzer entsprechend verknüpfen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.5.REQ.025",
+      "title": "Das System muss dem Nutzer eine Eingabemaske bereitstellen, um Autorendaten einzugeben oder einen vorhandenen Autor auszuwählen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.5.REQ.026",
+      "title": "Das System muss dem Nutzer ermöglichen, einen Autor einem bestehenden Spiel zuzuordnen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.5.REQ.027",
+      "title": "Das System muss den Autor speichern und die Verknüpfung mit dem Spiel anlegen, sobald die Eingaben abgeschlossen sind.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.5.REQ.028",
+      "title": "Das System soll bei bestehendem Autor die Verknüpfung zum Spiel ergänzen, ohne einen neuen Autor-Datensatz anzulegen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.2.REQ.023",
+      "title": "Das System muss es dem Nutzer ermöglichen, den Verleihzeitraum einer laufenden Ausleihe zu verlängern.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.4.REQ.023",
+      "title": "Das System muss es dem Nutzer ermöglichen, den Verleihzeitraum einer laufenden Ausleihe zu verlängern.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.2.REQ.024",
+      "title": "Das System muss dem Nutzer ermöglichen, eine verliehene Spielkopie als zurückgegeben zu markieren, woraufhin der Verleihstatus im System automatisch aktualisiert wird.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.4.REQ.024",
+      "title": "Das System muss dem Nutzer ermöglichen, eine verliehene Spielkopie als zurückgegeben zu markieren, woraufhin der Verleihstatus im System automatisch aktualisiert wird.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.6.REQ.030",
+      "title": "Das System muss dem Nutzer eine Eingabemaske bereitstellen, um Datum und Ort für den Spieleabend einzugeben.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.6.REQ.031",
+      "title": "Das System soll dem Nutzer ermöglichen, optionale Notizen und eine Adresse zum Spieleabend hinzuzufügen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.6.REQ.032",
+      "title": "Das System muss den Nutzer bei fehlenden Pflichtangaben (z.B. Datum, Ort) auf diese hinweisen und den Abbruch der Planung erlauben.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.6.REQ.033",
+      "title": "Das System muss den Spieleabend nach Eingabe der erforderlichen Daten anlegen und speichern.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.7.REQ.040",
+      "title": "Das System muss dem Nutzer eine Eingabemaske bereitstellen, um Datum und Details der Partie einzugeben.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.7.REQ.041",
+      "title": "Das System soll dem Nutzer ermöglichen, eine Verknüpfung der Partie mit einem bestehenden Spieleabend herzustellen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.7.REQ.042",
+      "title": "Das System muss dem Nutzer ermöglichen, eine Partie auch ohne Verknüpfung zu einem Spieleabend zu speichern (lose Veranstaltung).",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.7.REQ.043",
+      "title": "Das System muss die Partie nach Eingabe der erforderlichen Daten und ggf. Verknüpfung mit dem Spieleabend anlegen und speichern.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.8.REQ.050",
+      "title": "Das System muss dem Nutzer eine Möglichkeit bereitstellen, eine Spielkopie für eine Partie auszuwählen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.8.REQ.051",
+      "title": "Das System muss den Nutzer informieren, wenn die ausgewählte Spielkopie nicht verfügbar ist (z.B. verliehen).",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.8.REQ.052",
+      "title": "Das System soll dem Nutzer alternative verfügbare Spielkopien vorschlagen, falls die gewählte Kopie belegt ist.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.8.REQ.053",
+      "title": "Das System muss nach Auswahl der Spielkopie automatisch prüfen, ob diese für die gewählte Partie verfügbar ist.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.8.REQ.054",
+      "title": "Das System muss die Spielkopie bei Verfügbarkeit für die Partie reservieren und entsprechend kennzeichnen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.055",
+      "title": "Das System muss dem Nutzer ermöglichen, eine vorhandene Spielkopie zu löschen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.2.REQ.055",
+      "title": "Das System muss dem Nutzer ermöglichen, eine vorhandene Spielkopie zu löschen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "REQ.056",
+      "title": "Das System muss dem Nutzer (z.B. einem Administrator) ermöglichen, einen Spieldatensatz (Stammdaten) vollständig zu löschen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.1.REQ.056",
+      "title": "Das System muss dem Nutzer (z.B. einem Administrator) ermöglichen, einen Spieldatensatz (Stammdaten) vollständig zu löschen.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.9.REQ.060",
+      "title": "Das System muss eine tabellarische Spieleübersicht ausgeben, die Titel, Jahr, Spieleranzahl, Dauer, Mindestalter und Kategorie enthält.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.9.REQ.061",
+      "title": "Das System muss eine Übersicht aller angelegten Spieler mit ihrem Nicknamen und Status ausgeben.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.9.REQ.062",
+      "title": "Das System muss den aktuellen Verleihstatus anzeigen (Welche Kopie bei welchem Spieler inkl. Start- und Rückgabedatum).",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.10.REQ.070",
+      "title": "Das System muss die Anzahl der erfassten Spiele, Spieler, Kopien und Partien als Bestandsstatistik ausgeben.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.10.REQ.071",
+      "title": "Das System muss die Top-Listen für die am häufigsten verliehenen Spiele und die aktivsten Spieler ermitteln.",
+      "origin": "local",
+      "manual": false,
+      "deprecated": false
+    },
+    {
+      "id": "UC.1.NFR.001",
+      "title": "System muss leicht anpassbar sein, z.B. bei Änderungen der Spielattribute, neuen Feldern oder Workflows.",
+      "origin": "local",
+      "manual": true,
+      "deprecated": false
+    },
+    {
+      "id": "UC.2.NFR.002",
+      "title": "System muss korrekte Daten speichern und keine Konflikte erzeugen.",
+      "origin": "local",
+      "manual": true,
+      "deprecated": false
+    },
+    {
+      "id": "NFR.003",
+      "title": "Zugriff auf Spiel-, Spieler- und Verleihinformationen muss geschützt sein.",
+      "origin": "local",
+      "manual": true,
+      "deprecated": false
+    },
+    {
+      "id": "UC.3.NFR.004",
+      "title": "System muss testbar sein, inklusive automatisierter Tests für Datenvalidierung und Verleihprozesse.",
+      "origin": "local",
+      "manual": true,
+      "deprecated": false
+    },
+    {
+      "id": "UC.4.NFR.005",
+      "title": "System muss stabil laufen, auch bei parallelen Verleihvorgängen.",
+      "origin": "local",
+      "manual": true,
+      "deprecated": false
+    },
+    {
+      "id": "UC.5.NFR.006",
+      "title": "Systemoberfläche muss intuitiv und verständlich sein, damit Nutzer Eingaben schnell tätigen können.",
+      "origin": "local",
+      "manual": true,
+      "deprecated": false
+    },
+    {
+      "id": "UC.6.NFR.007",
+      "title": "System reagiert zügig auf Nutzeraktionen, z.B. beim Laden von Spiel- oder Spielerlisten.",
+      "origin": "local",
+      "manual": true,
+      "deprecated": false
+    },
+    {
+      "id": "UC.10.NFR.007",
+      "title": "System reagiert zügig auf Nutzeraktionen, z.B. beim Laden von Spiel- oder Spielerlisten.",
+      "origin": "local",
+      "manual": true,
+      "deprecated": false
+    },
+    {
+      "id": "UC.7.NFR.008",
+      "title": "System muss jederzeit erreichbar sein, insbesondere für Verleih- und Partieprozesse.",
+      "origin": "local",
+      "manual": true,
+      "deprecated": false
+    },
+    {
+      "id": "UC.8.NFR.009",
+      "title": "System muss auch bei ungültigen Eingaben stabil reagieren.",
+      "origin": "local",
+      "manual": true,
+      "deprecated": false
+    },
+    {
+      "id": "NFR.010",
+      "title": "System soll auf verschiedenen Plattformen nutzbar sein, z.B. Docker oder Linux-Desktop (CLI).",
+      "origin": "local",
+      "manual": true,
+      "deprecated": false
+    },
+    {
+      "id": "NFR.011",
+      "title": "Aktionen wie Verleih, Rückgabe, Autor-/Spielanlage sollen nachvollziehbar protokolliert werden.",
+      "origin": "local",
+      "manual": true,
+      "deprecated": false
+    },
+    {
+      "id": "NFR.012",
+      "title": "Systemcode und Datenstruktur müssen klar dokumentiert und wartbar sein.",
+      "origin": "local",
+      "manual": true,
+      "deprecated": false
+    },
+    {
+      "id": "UC.10.NFR.013",
+      "title": "System muss steigende Datenmengen (Spiele, Spieler, Spielkopien) verarbeiten können.",
+      "origin": "local",
+      "manual": true,
+      "deprecated": false
+    },
+    {
+      "id": "NFR.014",
+      "title": "System kann optionale externe Datenquellen nutzen (z.B. BGG-API) ohne Anpassung der Kernlogik.",
+      "origin": "local",
+      "manual": true,
+      "deprecated": false
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "INSERT INTO Teilnahme (Partie_ID, Spieler_Email) VALUES (?, ?) \n                 ON DUPLICATE KEY UPDATE Spieler_Email = Spieler_Email",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 2
+    },
+    "nullable": []
+  },
+  "hash": "50fb2b384cba43b1b206b37ef51bfb05b36dbf595d997c6fbaa28b6220b88bac"
+}

@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "DELETE FROM Spiel WHERE Spieltitel = ? AND Erscheinungsjahr = ?",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 2
+    },
+    "nullable": []
+  },
+  "hash": "e3213c89cc9a85c17e602fe7008ec7a97b7e96fe670138b9701f504d6c8e5dd8"
+}

@@ -1,0 +1,13 @@
+name = "Datenkonsistenz und Integrität"
+date = "2026-03-11 14:22"
+reviewer = "Oliver Decker"
+comment = "Die Datenhaltung ist zuverlässig und verhindert effektiv Inkonsistenzen."
+
+[[requirements]]
+id = "NFR.002"
+comment = "Die Datenbank verwendet strikte Constraints und bildet wesentliche Teile der Business-Logik direkt über Trigger, Stored Procedures und Constraints ab. Dadurch werden Konflikte frühzeitig verhindert. Durch die starke Validierung auf Datenbankebene bleibt die Datenintegrität auch bei komplexen Operationen gewährleistet."
+
+[[requirements]]
+id = "UC.2.NFR.002"
+comment = "Die Datenbank verwendet strikte Constraints und bildet wesentliche Teile der Business-Logik direkt über Trigger, Stored Procedures und Constraints ab. Dadurch werden Konflikte frühzeitig verhindert. Durch die starke Validierung auf Datenbankebene bleibt die Datenintegrität auch bei komplexen Operationen gewährleistet."
+

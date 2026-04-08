@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "INSERT INTO Teilnahme (Partie_ID, Spieler_Email) VALUES (?, ?)",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 2
+    },
+    "nullable": []
+  },
+  "hash": "2d5fe67f174d57d74092cacceb921c6d7ae207e9422cdfdd82b7b78a03801c84"
+}

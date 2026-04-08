@@ -1,0 +1,13 @@
+name = "Anpassbarkeit des Systems"
+date = "2026-03-10 10:15"
+reviewer = "Paul Deininger"
+comment = "Die Anpassbarkeit des Systems ist gut umgesetzt und erlaubt flexible Erweiterungen."
+
+[[requirements]]
+id = "NFR.001"
+comment = "Durch die Clean-Architecture ist das System klar strukturiert und gut erweiterbar. Neue Felder oder Workflows lassen sich einfach integrieren. Zusätzlich erleichtern Konstruktoren wie `new` sowie automatisch implementierte Default-Traits in Rust die Initialisierung und Erweiterung von Datenstrukturen erheblich. Die Architektur unterstützt zukünftige Änderungen effizient, ohne bestehende Logik stark beeinflussen zu müssen."
+
+[[requirements]]
+id = "UC.1.NFR.001"
+comment = "Durch die Clean-Architecture ist das System klar strukturiert und gut erweiterbar. Neue Felder oder Workflows lassen sich einfach integrieren. Zusätzlich erleichtern Konstruktoren wie `new` sowie automatisch implementierte Default-Traits in Rust die Initialisierung und Erweiterung von Datenstrukturen erheblich. Die Architektur unterstützt zukünftige Änderungen effizient, ohne bestehende Logik stark beeinflussen zu müssen."
+

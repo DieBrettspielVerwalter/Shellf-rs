@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "DELETE FROM Partie WHERE Partie_ID = ?",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 1
+    },
+    "nullable": []
+  },
+  "hash": "eb6b00dec3c12e0b7c07e4f2eaa4594f4060dde43ee07a387a2c25a0a23ba72c"
+}

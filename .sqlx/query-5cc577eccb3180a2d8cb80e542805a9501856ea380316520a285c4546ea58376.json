@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "CALL Spieler_Ausleihe_Einfuegen(?, ?, ?, ?)",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 4
+    },
+    "nullable": []
+  },
+  "hash": "5cc577eccb3180a2d8cb80e542805a9501856ea380316520a285c4546ea58376"
+}

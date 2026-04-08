@@ -1,0 +1,1 @@
+{version: "0.7.0", test_runs: map(.test_runs) | add}

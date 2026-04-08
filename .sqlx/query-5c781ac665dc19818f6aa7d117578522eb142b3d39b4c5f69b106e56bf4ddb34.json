@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "INSERT INTO Spieler (Email, Nickname) VALUES (?, ?)",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 2
+    },
+    "nullable": []
+  },
+  "hash": "5c781ac665dc19818f6aa7d117578522eb142b3d39b4c5f69b106e56bf4ddb34"
+}

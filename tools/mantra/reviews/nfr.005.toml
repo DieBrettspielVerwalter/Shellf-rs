@@ -1,0 +1,13 @@
+name = "Stabilität bei parallelen Zugriffen"
+date = "2026-03-13 16:40"
+reviewer = "Micha WIedemann"
+comment = "Das System bleibt auch bei gleichzeitigen Zugriffen stabil."
+
+[[requirements]]
+id = "NFR.005"
+comment = "Die Stabilität bei parallelen Verleihvorgängen wird durch den Datenbankserver (MariaDB) gewährleistet, der konkurrierende Zugriffe zuverlässig handhabt. Durch die Nutzung eines etablierten DBMS werden Race Conditions und Inkonsistenzen effektiv vermieden."
+
+[[requirements]]
+id = "UC.4.NFR.005"
+comment = "Die Stabilität bei parallelen Verleihvorgängen wird durch den Datenbankserver (MariaDB) gewährleistet, der konkurrierende Zugriffe zuverlässig handhabt. Durch die Nutzung eines etablierten DBMS werden Race Conditions und Inkonsistenzen effektiv vermieden."
+

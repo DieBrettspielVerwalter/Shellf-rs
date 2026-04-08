@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "INSERT INTO Spieleabend (Spieleabenddatum, Spieleabendnotizen, Gastgeber_Email) VALUES (?, ?, ?)",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 3
+    },
+    "nullable": []
+  },
+  "hash": "1d3a0a431285b946fdca1d7f7b7508bca4ae4a07aa2d04b730bdb789be4bedb1"
+}

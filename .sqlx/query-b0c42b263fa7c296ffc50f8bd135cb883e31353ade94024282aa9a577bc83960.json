@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "UPDATE Ausleihe SET Ausleihenddatum = CURDATE()\n             WHERE Kopie_ID = ? AND (Ausleihenddatum >= CURDATE() OR Ausleihenddatum = '9999-12-31')",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 1
+    },
+    "nullable": []
+  },
+  "hash": "b0c42b263fa7c296ffc50f8bd135cb883e31353ade94024282aa9a577bc83960"
+}

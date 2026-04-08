@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "INSERT INTO Spielkopie (Spieltitel, Erscheinungsjahr, Besitzer_Email) VALUES (?, ?, ?)",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 3
+    },
+    "nullable": []
+  },
+  "hash": "327c1b16196e8108656e8cf2cd2059311028520b28fedf6e958f75ad911480cd"
+}

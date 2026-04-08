@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "CALL Spieler_EigeneKopie_Einfuegen(?, ?)",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 2
+    },
+    "nullable": []
+  },
+  "hash": "ac48295866605fa5eb9652526521fdec7d1e9c779e3a57452370332c450e3ff0"
+}

@@ -1,0 +1,13 @@
+name = "Benutzerfreundlichkeit der Oberfläche"
+date = "2026-03-14 11:33"
+reviewer = "David Zimmermann"
+comment = "Die Bedienung des Systems ist intuitiv und verständlich."
+
+[[requirements]]
+id = "NFR.006"
+comment = "Ein Test mit einem unerfahrenen Benutzer hat gezeigt, dass die Oberfläche verständlich ist und Aufgaben ohne große Einarbeitung durchgeführt werden können. Die klare Struktur des CLI trägt dazu bei, dass Nutzer Eingaben schnell und effizient tätigen können."
+
+[[requirements]]
+id = "UC.5.NFR.006"
+comment = "Ein Test mit einem unerfahrenen Benutzer hat gezeigt, dass die Oberfläche verständlich ist und Aufgaben ohne große Einarbeitung durchgeführt werden können. Die klare Struktur des CLI trägt dazu bei, dass Nutzer Eingaben schnell und effizient tätigen können."
+

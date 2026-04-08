@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "UPDATE Teilnahme SET Spielerrang = ? WHERE Partie_ID = ? AND Spieler_Email = USER_EMAIL()",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 2
+    },
+    "nullable": []
+  },
+  "hash": "b804a558718046ad1013d035fb09f6822c6208004259c57f2aa5a4c8415e1e0a"
+}

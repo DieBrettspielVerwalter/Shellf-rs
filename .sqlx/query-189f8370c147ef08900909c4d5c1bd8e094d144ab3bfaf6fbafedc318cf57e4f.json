@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "DELETE FROM Teilnahme WHERE Partie_ID = ?",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 1
+    },
+    "nullable": []
+  },
+  "hash": "189f8370c147ef08900909c4d5c1bd8e094d144ab3bfaf6fbafedc318cf57e4f"
+}

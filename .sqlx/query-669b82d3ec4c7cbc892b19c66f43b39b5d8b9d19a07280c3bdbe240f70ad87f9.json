@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "DELETE FROM Spielkopie WHERE Kopie_ID = ?",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 1
+    },
+    "nullable": []
+  },
+  "hash": "669b82d3ec4c7cbc892b19c66f43b39b5d8b9d19a07280c3bdbe240f70ad87f9"
+}

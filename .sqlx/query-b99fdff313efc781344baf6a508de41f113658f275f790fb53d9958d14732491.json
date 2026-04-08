@@ -1,0 +1,25 @@
+{
+  "db_name": "MySQL",
+  "query": "SELECT USER_EMAIL() AS user_email;",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "user_email",
+        "type_info": {
+          "type": "VarString",
+          "flags": "",
+          "char_set": 224,
+          "max_size": 1020
+        }
+      }
+    ],
+    "parameters": {
+      "Right": 0
+    },
+    "nullable": [
+      true
+    ]
+  },
+  "hash": "b99fdff313efc781344baf6a508de41f113658f275f790fb53d9958d14732491"
+}

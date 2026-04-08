@@ -1,0 +1,38 @@
+[project]
+name = "mantra"
+version = "0.1.0"
+repository = "https://github.com/DieBrettspielVerwalter/Shellf"
+homepage = "https://github.com/DieBrettspielVerwalter/Shellf"
+
+# [report-template]
+# base = "base-template.html"
+# req-data = "mantra/examples/usage/req_template.html"
+# test-run-data = "mantra/examples/usage/test_run_template.html"
+
+# [[requirements]]
+# origin = "https://github.com/DieBrettspielVerwalter/Shellf/tree/main"
+
+[[requirements]]
+files = ["mantra/requirements.json"]
+
+[[traces]]
+root = "src"
+
+[coverage]
+files = ["llvm-out/coverage.json"]
+
+[review]
+files = [
+  "reviews/nfr.001.toml",
+  "reviews/nfr.002.toml",
+  "reviews/nfr.004.toml",
+  "reviews/nfr.005.toml",
+  "reviews/nfr.006.toml",
+  "reviews/nfr.007.toml",
+  "reviews/nfr.008.toml",
+  "reviews/nfr.009.toml",
+  "reviews/nfr.010.toml",
+  "reviews/nfr.012.toml",
+  "reviews/nfr.013.toml",
+  "reviews/nfr.014.toml",
+]

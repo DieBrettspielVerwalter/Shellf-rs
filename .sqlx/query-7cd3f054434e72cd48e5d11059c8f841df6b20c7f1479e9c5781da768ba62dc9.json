@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "INSERT INTO Person (Email, Personenvorname, Personennachname, Personname, Notizen) VALUES (?, ?, ?, ?, ?)",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 5
+    },
+    "nullable": []
+  },
+  "hash": "7cd3f054434e72cd48e5d11059c8f841df6b20c7f1479e9c5781da768ba62dc9"
+}
